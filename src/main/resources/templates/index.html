@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/animations.css" />
+
+    <title>Patient App</title>
+    <style>
+        table{
+            animation: transitionIn-Y-bottom 0.5s;
+        }
+        body {
+            font-family: Arial, sans-serif; /* Use a modern font */
+            background-color: #d2e0ef; /* Light background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .full-height {
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        table {
+            background-color: #ffffff; /* White background for the table */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            padding: 20px; /* Padding inside the table */
+        }
+
+        .edoc-logo {
+            font-size: 2em; /* Larger font size for the logo */
+            color: #007bff; /* Primary color for the logo */
+        }
+
+        .edoc-logo-sub {
+            font-size: 1.2em; /* Slightly smaller font size for the subtitle */
+            color: #555; /* Darker color for the subtitle */
+        }
+
+        .heading-text {
+            font-size: 1.8em; /* Larger font size for the heading */
+            color: #333; /* Dark color for better readability */
+            margin: 20px 0; /* Margin for spacing */
+        }
+
+        .sub-text2 {
+            font-size: 1em; /* Standard font size for the subtext */
+            color: #666; /* Lighter color for the subtext */
+            line-height: 1.5; /* Improved line height for readability */
+            text-align: center; /* Center align the text */
+        }
+
+        .login-btn {
+            background-color: #007bff; /* Primary button color */
+            color: white; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .footer-hashen {
+            margin-top: 20px; /* Margin for spacing */
+            color: #999; /* Lighter color for footer text */
+            font-size: 0.9em; /* Smaller font size for footer */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="full-height">
+    <center>
+        <table border="0">
+            <tr>
+                <td width="80%">
+                    <font class="edoc-logo">PatSystem. </font>
+                    <font class="edoc-logo-sub">| YOUR PATIENT APPOINTMENT SYSTEM</font>
+                </td>
+                <td width="10%">
+                    <a th:href="@{/login}"  class="non-style-link"><p class="nav-item">LOGIN</p></a>
+                </td>
+                <td  width="10%">
+                    <a th:href="@{/register}" class="non-style-link"><p class="nav-item" style="padding-right: 10px;">REGISTER</p></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td  colspan="3">
+                    <p class="heading-text">Easily Schedule Your Medical Appointments.</p>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="3">
+                    <p class="sub-text2">Need to see a doctor? Don't wait!<br>Book your appointment online in just a few clicks. <br>
+                        Our platform provides a hassle-free experience for managing your health.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <center>
+                        <a th:href="@{/login}"  >
+                            <input type ="button" value="Book Appointment" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                        </a>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+
+                </td>
+            </tr>
+        </table>
+        <p class="sub-text2 footer-hashen">A Web Solution by Joy.</p>
+    </center>
+
+</div>
+</body>
+</html>
